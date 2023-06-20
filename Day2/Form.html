@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+        }
+        .name{
+            border-radius: 10px;
+            margin: 0px 10px;
+            outline: none;
+            border: none;
+            padding: 2px;
+        }
+        #button{
+            border-radius: 7px;
+            padding: 8px 20px;
+            border-color: darkblue;
+            outline: none;
+            font-size: 15px;
+        }
+        #button:hover{
+            color: white;
+            background-color: black;
+        }
+        
+    </style>
+    <title>Form</title>
+</head>
+<body>
+    <form action="F_form">
+        <fieldset>
+            <legend>Registration</legend>
+            <label for="name">Enter first name:<input type="text" placeholder="First name" class="name"></label>
+            
+            <br><br>
+            <label for="surname">Enter last name: <input type="text" placeholder="last name" class="name"></label>
+            <br><br>
+            <label for="Gender">Gender:
+                <span>male</span><input type="radio" name="gen">
+                <span>female</span><input type="radio" name="gen">
+            </label>
+            <br><br>
+            <label for="hobby">
+                Hobby:
+                <span><input type="checkbox"></span>Draw<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <span><input type="checkbox">Singing</span><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <span><input type="checkbox">Playing</span>
+                <br>
+            </label>
+            <br>
+            <label for="">DOB:
+                <input type="date">
+            </label>
+            <br><br>
+            <label for="color">Favroit color: <input type="color"></label>
+            <br><br>
+            <label for="add">
+                Address: <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <textarea name="" id="" cols="10" rows="10" ></textarea>
+            </label>
+            <br><br>
+            <input type="submit" value="submit"
+            id="button">
+        </fieldset>
+    </form>
+</body>
+</html>
