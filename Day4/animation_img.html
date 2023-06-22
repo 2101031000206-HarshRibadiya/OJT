@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img rotate effect</title>
+    <style>
+        .container_img{
+            width: 400px;
+            position:relative;
+        }
+
+        img{
+            display: block;
+            height: 400px;
+            width: 400px;
+            transition: 3s;
+        }
+        .Overlay
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            opacity: 0%;
+            transition: 3s;
+            background-color: rgb(0, 0, 0,0.8);
+        }
+        .container_img:hover .Overlay{
+            opacity: 1;
+        }
+        .container_img:hover img{
+            transform: rotate(360deg)
+        }
+        .text{
+            position: absolute;
+            color: white;
+            font-size: 30px;
+            top: 48%;
+            left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Img Overlay Effect</h2>
+    <div class="container_img">
+        <img src="img1.jpg" alt="load img">
+        <div class="Overlay">
+            <div class="text">Hello</div>
+        </div>
+    </div>
+</body>
+</html>

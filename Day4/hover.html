@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        #item .li_1{
+            font-size: 1.9rem;
+        }
+        #item li ul li{
+           display: none;
+        }
+        #item li:hover ul li{
+            display: block;
+            
+        }
+        #item li:hover ul li ul li{
+            display: none;
+        }
+        #item li ul li:hover ul li{
+            display:block
+        }
+        #item li ul li:hover ul li ul li{
+            display: none;
+        }
+        #item li ul li ul li:hover ul li{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul id="item">
+        <li class="li_1">
+            Google 
+            <ul>
+                <li> Gmail
+                    <ul>
+                        <li>sign up</li>
+                        <li>sign in
+                            <ul>
+                                <li>Sign in us admin</li>
+                                <li>sign in us member</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="li_1">
+            facebook
+            <ul>
+                <li>account
+                    <ul>
+                        <li>log in</li>
+                        <li>sign up
+                            <ul>
+                                <li>create one</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="li_1">
+            microsoft
+            <ul>
+                <li>account
+                    <ul>
+                        <li>sign in</li>
+                        <li>sign up
+                            <ul>
+                                <li>create</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="li_1">
+            instagram
+            <ul>
+                <li>account
+                    <ul>
+                        <li>sign in</li>
+                        <li>sign up
+                            <ul>
+                                <li>create</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>  
+        <li class="li_1">
+            Amazon
+            <ul>
+                <li>account
+                    <ul>
+                        <li>sign in</li>
+                        <li>sign up
+                            <ul>
+                                <li>create</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>  
+    </ul>
+ 
+</body>
+</html>
