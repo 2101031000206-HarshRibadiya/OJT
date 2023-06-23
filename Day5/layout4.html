@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 23px;
+            font-weight: bolder;
+        }
+        .sec{
+            margin: 0px 10px;
+        }
+        #navbar{
+            width: 100%;
+            display: flex;
+        }
+
+        #R1{
+            width: 48%;
+            background-color: grey;
+            padding-top: 18px;
+            padding-left: 2%;
+            height: 50px;
+            margin-top: 10px;
+            display: flex;
+             /* box-shadow: 0px 5px 5px; */
+        }
+
+        .nav{
+            margin-top: 10px;
+            text-align: center;
+            /* border: 2px solid black; */
+            width: 48%;
+            background-color: grey;
+            padding-top: 18px;
+            padding-left: 2%;
+            height:50px;
+            /* box-shadow: 0px 5px 5px; */
+        }
+        
+        #R2{
+            height: 1200px;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 30px;
+        }
+        #R2 .class{
+           background-color: gray; 
+           /* margin: 20px; */
+        }
+        #R3{
+            margin-top: 20px;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #R3 .c1{
+            background-color: gray;
+            width: 32%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #R4 {
+            background-color: gray;
+            padding:10px;
+            margin: 10px 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sec">
+        <div id="navbar">
+            <div id="R1">Logo</div>
+            <div class="nav">navbar</div>
+        </div>
+        <div id="R2">
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+            <div class="class"></div>
+        </div>
+        <div id="R3">
+            <div class="c1">Box 1</div>
+            <div class="c1">Box 2</div>
+            <div class="c1">Box 3</div>
+        </div>
+        <div id="R4">Footer</div>
+    </div>
+</body>
+</html>

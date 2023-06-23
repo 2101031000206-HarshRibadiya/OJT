@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 23px;
+            font-weight: bolder;
+        }
+        .sec{
+            margin: 0px 10px;
+        }
+
+        #R1,#R5{
+            width: 98%;
+            background-color: grey;
+            padding-top: 18px;
+            padding-left: 2%;
+            height: 50px;
+            margin-top: 10px;
+        }
+        #R2{
+            margin-top: 10px;
+            width: 100%;
+            background-color: grey;
+            height: 40px;
+            padding-top: 8px;
+            text-align: center            
+        }
+        #R3{
+            margin-top: 10px;
+            background-color: grey;
+            height: 60px;
+            padding-top: 35px;
+            text-align: center;
+            
+        }
+        #R4{
+            margin-top: 10px;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #R4 #c1{
+            
+            background-color: grey;
+            margin-right: 20px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #R4 #c2{
+            width: 100%;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sec">
+        <div id="R1">
+            Logo
+        </div>
+        <div id="R2">
+            navbar
+        </div>
+        <div id="R3">
+            Header/Banner
+        </div>
+        <div id="R4">
+            <div id="c1">Body area</div>
+            <div id="c2">Container</div>
+        </div>
+        <div id="R5">footer</div>
+    </div>
+</body>
+</html>

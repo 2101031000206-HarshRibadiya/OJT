@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 23px;
+            font-weight: bolder;
+        }
+        .sec{
+            margin: 0px 10px;
+        }
+        #navbar{
+            width: 100%;
+            display: flex;
+        }
+
+        #R1{
+            width: 48%;
+            background-color: grey;
+            padding-top: 18px;
+            padding-left: 2%;
+            height: 50px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav{
+            margin-top: 10px;
+            text-align: center;
+            /* border: 2px solid black; */
+            width: 48%;
+            background-color: grey;
+            padding-top: 18px;
+            padding-left: 2%;
+            height:50px;
+        }
+        #R2{
+            margin-top: 10px;
+            width: 100%;
+            background-color: grey;
+            height: 40px;
+            padding-top: 8px;
+            text-align: center            
+        }
+        #R3{
+            margin-top: 10px;
+            background-color: grey;
+            height: 60px;
+            padding-top: 35px;
+            text-align: center;
+            
+        }
+        #R4{
+            margin-top: 10px;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #R4 #c1{
+            
+            background-color: grey;
+            margin-right: 20px;
+            width: 33%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #R4 #c2{
+            width: 33%;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #R4 #c3{
+            width: 33%;
+            background-color: gray;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="sec">
+            <div id="navbar">
+                <div id="R1">Logo</div>
+                <div class="nav">navbar</div>
+            </div>
+        <div id="R2">
+            navbar
+        </div>
+        <div id="R3">
+            Header/Banner
+        </div>
+        <div id="R4">
+            <div id="c1">Box 1</div>
+            <div id="c2">Box 2</div>
+            <div id="c3">Box 3</div>
+        </div>
+        <div id="R5">footer</div>
+    </div>
+</body>
+</html>

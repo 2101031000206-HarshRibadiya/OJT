@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        .m1{
+            width: 100%;
+            background-color: red;
+            height: 100px;
+        }
+        @media(max-width:1200px)
+        {
+            .m1{
+                background-color: green;
+            }
+        }
+        @media(max-width:800px)
+        {
+            .m1{
+                background-color: yellow;
+            }
+        }
+        @media(max-width:400px)
+        {
+            .m1{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Media query</h2>
+    <div class="m1"></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 23px;
+            font-weight: bolder;
+        }
+        .sec{
+            margin: 0px 10px;
+        }
+
+        #R1{
+            width: 98%;
+            background-color: grey;
+            padding-top: 18px;
+            padding-left: 2%;
+            height: 50px;
+            margin-top: 10px;
+        }
+        #R2{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            height: 600px;
+        
+        }
+        #R2 #c1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10%;
+        }
+        #R2 #c2{
+            width: 100%;
+        }
+        #c2 #r1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 25%;
+            background-color: gray;
+        }
+        #c2 #r2{
+            display: flex;
+            align-items: center;
+            justify-content:center ;
+            margin-top: 2%;
+            height: 72%;
+            background-color: gray;
+        }
+        #R3{
+            margin: 10px 0px;
+            height: auto;
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sec">
+        <div id="R1">
+            LoGo
+        </div>
+        <div id="R2">
+            <div id="c1">Slide bar and navigation</div>
+            <div id="c2"> 
+                <div id="r1">header/Border</div>
+                <div id="r2">Body Area</div>
+            </div>
+        </div>
+        <div id="R3">footer</div>
+    </div>
+</body>
+</html>
