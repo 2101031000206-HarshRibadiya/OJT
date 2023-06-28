@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use addEventListener focus variable</title>
+</head>
+<body>
+    <select name="" id="productid">
+        <option value="">DEFAULT</option>
+        <option value="12000">TV</option>
+        <option value="5000">AC</option>
+        <option value="15000">COMPUTER</option>
+    </select>
+    <br>
+    <br>
+    prize: <input type="text" id="prizeid">
+    <br>
+    <br>
+    Quantity: <input type="text" id="count">
+    <br>
+    <br>
+    Total amount: <input type="text" id="totalamount">
+
+    <script>
+        var product= document.getElementById("productid")
+        var quantity=document.getElementById("count")
+        var price=document.getElementById("prizeid")
+        var amount=document.getElementById("totalamount")
+
+        product.addEventListener("change",()=>{price.value=product.value})
+        amount.addEventListener('focus',()=>{amount.value=product.value*quantity.value})
+    </script>
+</body>
+</html>

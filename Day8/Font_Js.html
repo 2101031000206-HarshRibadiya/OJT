@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font size increase</title>
+</head>
+
+<body>
+    <p id="para">SILVER OAK UNIVERCITY</p>
+    <Script>
+        var para = document.getElementById("para")
+        var i = 15;
+        var a = setInterval(() => {
+            para.style.fontSize = i + 'px';
+            i = i + 5;
+            if (i == 50) {
+                clearInterval(a)
+            }
+        }, 100)
+
+    </Script>
+</body>
+
+</html>

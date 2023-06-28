@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb on off using hoveron and hoveroff</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <img src="bulboff.jpeg" alt="process" id="bulb">
+
+    <script>
+        var bulb=document.getElementById("bulb")
+
+        bulb.addEventListener("mouseover",()=>{bulb.src="bulbon.jpeg"})
+        bulb.addEventListener("mouseout",()=>{bulb.src="bulboff.jpeg"})
+
+    </script>
+</body>
+</html>

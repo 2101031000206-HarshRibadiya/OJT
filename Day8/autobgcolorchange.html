@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto bg color change using intevel funcation</title>
+</head>
+<body id="mybody">
+    <h2 id="myname">harsh ribadiys</h2>
+</body>
+<script>
+    var para = document.getElementById("myname")
+        var h = 15;
+        var a = setInterval(() => {
+            para.style.fontSize = h + 'px';
+            h = h + 5;
+            if (h == 50) {
+                h=0;
+            }
+        }, 1000)
+    var colors=['white','black','red','green','blue','white']
+    var mytext = document.getElementById("myname")
+    j=0;
+    setInterval(()=>{
+        mytext.style.color= colors[j];
+        j++;
+        if(j==colors.length)
+        {
+            j=0;
+        }
+    },1000)
+    var color = ['red','blue','green','yellow','pink','orange']
+    var mybody = document.getElementById("mybody")
+    var i=0;
+    setInterval(()=>{
+        mybody.style.backgroundColor = color[i];
+        i++;
+        if(i==color.length)
+        {
+            i=0;
+        }
+    },1000)
+</script>
+</html>

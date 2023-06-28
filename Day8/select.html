@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change bg color</title>
+</head>
+<body id="mainbody">
+    <select name="" id="mainitem">
+        <option value="">default</option>
+        <option value="red">RED</option>
+        <option value="green">GREEN</option>
+        <option value="blue">BLUE</option>
+        <option value="yellow">YELLOW</option>
+    </select>
+    <script>
+        var colors =document.getElementById("mainitem");
+        console.log(colors);
+        var mybody =document.getElementById("mainbody");
+        colors.addEventListener("change",()=>{mybody.style.backgroundColor=colors.value})
+    </script>
+</body>
+</html>
