@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('#box').hide(2000)
+            })
+            $('#show').click(function(){
+                $('#box').show(2000)
+            })
+            $('#toggle').click(function(){
+                $('#box').toggle(2000)
+            })
+            $('#tg').click(function(){
+                ($(this).text()=="Hide")
+                 ?($(this).text("show")
+                 ,$('#show').attr("disabled",false)
+                 ,$('#hide').attr("disabled",true)
+                 ,$('#box').toggle(2000)
+                 )
+                 :($(this).text("Hide")
+                 ,$('#hide').attr("disabled",false)
+                 ,$('#show').attr("disabled",true)
+                 ,$('#box').toggle(2000)
+                 )
+            })
+            $("#BtnPlus").click(function(){
+					var MDH=parseInt($("#box").css("height"));
+					if(MDH<=500)
+					{
+						MDH+=10;
+						$("#box").css("height",MDH);
+						$("#box").css("width",MDH);
+					}
+					else{
+						alert("More than 500px is not possible.");
+					}
+				});
+				
+				$("#BtnMinus").click(function(){
+					var MDH=parseInt($("#box").css("height"));
+					if(MDH>=20)
+					{
+						MDH-=10;
+						$("#box").css("height",MDH);
+						$("#box").css("width",MDH);
+					}
+					else{
+						alert("Less than 20px is not possible.");
+					}
+				});
+
+                $("#fadeIn").click(function(){
+                    $("#box").fadeIn(1000)
+                })
+                $("#fadeOut").click(function(){
+                    $("#box").fadeOut(1000)
+                })
+        })
+
+    </script>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+    </style>
+    <title>jQuary</title>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    <hr>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+    <hr>
+    <button id="tg">Hide</button>
+    <hr>
+    <button id="BtnPlus">+</button>
+    <button id="BtnMinus">-</button>
+    <hr>
+    <button id="fadeIn">fade in</button>
+    <button id="fadeOut">fade out</button>
+</body>
+</html>
